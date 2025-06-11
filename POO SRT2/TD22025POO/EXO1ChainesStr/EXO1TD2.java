@@ -6,15 +6,14 @@
 👉 Utilisez les méthodes de la classe String : split(), substring(), indexOf()
  */
 
-
-public class EXO1 {
+public class EXO1TD2 {
     public static void main(String[] args) {
         String url = "https://uadb.sn";
         String protocol = url.substring(0, url.indexOf(":"));
-        String protocol2 = url.substring(0, 4);
+        String protocol2 = url.substring(0, 5);
 
         String domain = url.substring(url.indexOf("//") + 2, url.lastIndexOf("."));
-        String extension = url.substring(url.lastIndexOf(".") + 1);
+        String extension = url.substring(url.lastIndexOf("."));
 
         System.out.println("Protocole M1 avec indexOf: " + protocol);
         System.out.println("Protocole M2 substring(0,4): " + protocol2);
